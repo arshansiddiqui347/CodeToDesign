@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeToDesign</title>
+  <style>
+    /* === General Styles === */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f7fa;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #007BFF, #00C6FF);
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .component {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .component h2 {
+      margin-top: 0;
+      color: #007BFF;
+    }
+    .preview {
+      margin: 15px 0;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: #fafafa;
+      text-align: center;
+    }
+    pre {
+      background: #1e1e1e;
+      color: #dcdcdc;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+
+    /* === Example Component Styles === */
+    .modern-btn {
+      background: linear-gradient(90deg, #007BFF, #00C6FF);
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .modern-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .card {
+      width: 250px;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      background: #fff;
+      margin: auto;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+    .card p {
+      color: #555;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <!-- === Header === -->
+  <header>
+    <h1>CodeToDesign</h1>
+    <p>Learn UI with Code</p>
+  </header>
+
+  <!-- === Navbar === -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#components">Components</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- === Components Section === -->
+  <section id="components">
+    <h2>UI Components</h2>
+
+    <!-- Component 1: Button -->
+    <div class="component">
+      <h2>Modern Button</h2>
+      <div class="preview">
+        <button class="modern-btn">Click Me</button>
+      </div>
+      <pre>
+&lt;button class="modern-btn"&gt;Click Me&lt;/button&gt;
+
+.modern-btn {
+  background: linear-gradient(90deg, #007BFF, #00C6FF);
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.modern-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+      </pre>
+    </div>
+
+    <!-- Component 2: Card -->
+    <div class="component">
+      <h2>Profile Card</h2>
+      <div class="preview">
+        <div class="card">
+          <img src="https://via.placeholder.com/250x150" alt="profile">
+          <h3>John Doe</h3>
+          <p>Web Developer</p>
+        </div>
+      </div>
+      <pre>
+&lt;div class="card"&gt;
+  &lt;img src="https://via.placeholder.com/250x150" alt="profile"&gt;
+  &lt;h3&gt;John Doe&lt;/h3&gt;
+  &lt;p&gt;Web Developer&lt;/p&gt;
+&lt;/div&gt;
+
+.card {
+  width: 250px;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  background: #fff;
+}
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
+.card h3 {
+  margin: 10px 0 5px;
+}
+.card p {
+  color: #555;
+  font-size: 14px;
+}
+      </pre>
+    </div>
+  </section>
+
+  <!-- === About Section === -->
+  <section id="about">
+    <h2>About CodeToDesign</h2>
+    <p>
+      CodeToDesign is a learning hub where you can explore UI components
+      and instantly view their code. Whether you are a beginner or improving
+      your web design skills, this project helps you connect design with code.
+    </p>
+  </section>
+
+  <!-- === Contact Section === -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      Created by <strong>Your Name</strong>.  
+      Reach out on GitHub or email: <strong>youremail@example.com</strong>
+    </p>
+  </section>
+</body>
+    </html>
